@@ -1,0 +1,13 @@
+<div class="places">
+  <h2 class="title">My Places</h2>
+  <div class="content">
+    <ul class="list">
+      <li *ngFor="let place of places" (click)="onSelect(place)" [class.selected]="place === selectedPlace" class="place">
+        <span>{{place.name}}</span> ({{place.country}})
+      </li>
+    </ul>
+    <div class="map">
+      tu będzie mapa - a na razie wybrales {{selectedPlace?.name}}
+    </div>
+  </div>
+</div>

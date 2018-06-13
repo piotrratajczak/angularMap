@@ -1,0 +1,28 @@
+.places {
+  display: flex;
+  flex-direction: column;
+}
+
+.place {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.place:hover{
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+.selected, .selected:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.title {
+  margin: auto;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-content: center;
+  align-items: center;
+}
